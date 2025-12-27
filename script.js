@@ -3,6 +3,8 @@
 // ---------------------------
 const products = [
   {name: "فانوس ذهبي", price: 45, image: "فانوس ذهبي"}
+   {name: "فانوس ذهبي", price: 45, image: "فانوس ذهبي"}
+ {name: "فانوس ذهبي", price: 45, image: "فانوس ذهبي"}
   // مثال:
   // {name: "اسم المنتج", price: 100, image: "رابط الصورة"},
 ];
@@ -22,6 +24,7 @@ products.forEach(item => {
     </div>
   `;
 });
+
 
 
 
