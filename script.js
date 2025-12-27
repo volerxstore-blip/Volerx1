@@ -1,5 +1,5 @@
 / ضع هنا رابط جدولك المنشور
-const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSOpBiZrdzvfBLt9pkupN_CYY_KgusSVpxmvt10N_S-BlAkgfmludXmaXwhZcXx-lzRqwMAWeHTlX9w/pub?output=csv";
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRKGKEnpyZI-y9qqmEz9aYsOCuDi-uId6_DCT4CiSo6c0VIa1FmuvfHbHCJDp2w85P6N4TMOfpMGU09/pub?gid=1255028173&single=true&output=csv";
 
 // المكان الذي ستعرض فيه المنتجات
 const productsDiv = document.getElementById("products");
@@ -23,3 +23,4 @@ fetch(sheetURL)
     });
 
   });
+
