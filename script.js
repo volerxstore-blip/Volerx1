@@ -1,29 +1,26 @@
-/ ضع هنا رابط جدولك المنشور
-const sheetURL = "https://api.sheetbest.com/sheets/182e80a2-6937-4313-9add-82f8f95b4b54";
+// ---------------------------
+// أضف منتجاتك هنا فقط
+// ---------------------------
+const products = [
+  {name: "افانوس ذهبي", price: 45, image: "https://drive.google.com/open?id=1tI7qezgUUcLA7uoLqdd4HsTE0aknSEba "}
+  // مثال:
+  // {name: "اسم المنتج", price: 100, image: "رابط الصورة"},
+];
 
-// المكان الذي ستعرض فيه المنتجات
+// ---------------------------
+// الكود الذي يعرض المنتجات على الموقع
+// لا تغير شيء هنا
+// ---------------------------
 const productsDiv = document.getElementById("products");
 
-// جلب البيانات من الجدول
-fetch(sheetURL)
-  .then(response => response.text())
-  .then(data => {
-    const rows = data.split("\n").slice(1); // نتجاوز العنوان
-    rows.forEach(row => {
-      const [name, price, image] = row.split(",");
-      if(name && price && image){
-        productsDiv.innerHTML += `
-          <div class="product">
-            <img src="${image}">
-            <h3>${name}</h3>
-            <p>₪ ${price}</p>
-          </div>
-        `;
-      }
-    });
-
-  });
-
-
+products.forEach(item => {
+  productsDiv.innerHTML += `
+    <div class="product">
+      <img src="${item.image}">
+      <h3>${item.name}</h3>
+      <p>₪ ${item.price}</p>
+    </div>
+  `;
+});
 
 
