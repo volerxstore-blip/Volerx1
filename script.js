@@ -2,7 +2,7 @@
 // أضف منتجاتك هنا فقط
 // ---------------------------
 const products = [
-  {name: "فانوس ذهبي", price: 45, image: "فانوس ذهبي"}
+  {name: "فانوس ذهبي", price: 45, image: "https://ibb.co/nN7QByMghttps://ibb.co/v6TVy5L7"}
    {name: "مضيفة طعام", price: 80, image: "https://ibb.co/nN7QByMg"}
  {name: "فانوس سداسي ملون", price: 25, image: "https://ibb.co/jZBLWXPB"}
   // مثال:
@@ -24,6 +24,7 @@ products.forEach(item => {
     </div>
   `;
 });
+
 
 
 
