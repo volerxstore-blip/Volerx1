@@ -2,7 +2,7 @@
 // أضف منتجاتك هنا فقط
 // ---------------------------
 const products = [
-  {name: "فانوس ذهبي", price: 45, image: "https://drive.google.com/open?id=1tI7qezgUUcLA7uoLqdd4HsTE0aknSEba/image.jpg "}
+  {name: "فانوس ذهبي", price: 45, image: "18869261-5669-4812-967e-b99578bfa963 - احمد حسونه.jpeg"}
   // مثال:
   // {name: "اسم المنتج", price: 100, image: "رابط الصورة"},
 ];
@@ -22,6 +22,7 @@ products.forEach(item => {
     </div>
   `;
 });
+
 
 
 
