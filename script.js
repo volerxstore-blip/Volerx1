@@ -1,5 +1,5 @@
 / ضع هنا رابط جدولك المنشور
-const sheetURL = "ضع_رابط_الجدول_هنا";
+const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSOpBiZrdzvfBLt9pkupN_CYY_KgusSVpxmvt10N_S-BlAkgfmludXmaXwhZcXx-lzRqwMAWeHTlX9w/pub?output=csv";
 
 // المكان الذي ستعرض فيه المنتجات
 const productsDiv = document.getElementById("products");
@@ -21,4 +21,5 @@ fetch(sheetURL)
         `;
       }
     });
+
   });
